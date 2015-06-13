@@ -1,0 +1,58 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:onClick="doNothing"
+        android:visibility="gone"
+         >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_edge" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/custom_edge" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Turn Bluetooth On!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@drawable/edge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        style="@style/ButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="50"
+                        android:text="On"
+                        android:onClick="switchOn" />
+
+                    <Button
+                          style="@style/ButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="50"
+                        android:text="Off"
+                        android:onClick="switchOff" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>

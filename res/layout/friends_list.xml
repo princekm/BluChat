@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000"
+    android:onClick="hide" 
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_edge"
+        android:onClick="doNothing" >
+
+   <LinearLayout 
+             android:id="@+id/head"
+           
+        android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edge"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Friends"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <Button 
+                android:layout_width="20dp"
+                style="@style/ButtonTheme"
+                android:background="@drawable/refresh"
+                android:gravity="center"
+                android:layout_margin="0dp"
+                android:layout_height="20dp"
+                />
+</LinearLayout>
+                <ListView
+                    android:id="@+id/friend_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_below="@+id/head"
+                    android:background="@drawable/custom_edge" >
+
+                </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
